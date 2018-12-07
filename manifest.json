@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+
+    "name": "autoHAR",
+    "version": "1.0",
+    "description": "Generates HAR files for network traffic",
+
+
+    "permissions": [
+        "<all_urls>",
+        "downloads",
+        "downloads.open",
+        "downloads.shelf",
+        "storage"
+    ],
+
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "devtools_page": "devtools.html",
+
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": false
+    }
+}
